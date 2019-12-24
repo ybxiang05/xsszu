@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# General Layout
+--------------------------------------------------------------*/
+
+.site {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    .main-navigation {
+      display: flex;
+      @include desktop {
+        border-right: 2px solid grey;
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        flex-direction: column;
+      }
+    }
+    .site-content {
+      margin-left: 250px;
+    }
+  }
+}
+.site-footer {
+  display: none;
+}

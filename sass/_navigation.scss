@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.xsszu-logo {
+  height: 200px;
+  width: 200px;
+  background-image: url('https://placeholder.com/');
+  background-size: contain;
+}
+.menu-toggle {
+  display: block;
+  border: none;
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  @include desktop {
+    display: none;
+  }
+}
+.primary-menu {
+  display: none;
+  @include desktop {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  @include desktop {
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+}
