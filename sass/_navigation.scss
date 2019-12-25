@@ -1,41 +1,69 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.xsszu-logo {
-  height: 200px;
-  width: 200px;
-  background-image: url('https://placeholder.com/');
-  background-size: contain;
-}
-.menu-toggle {
-  display: block;
-  border: none;
-  width: 100px;
-  position: absolute;
-  right: 20px;
-  top: 40px;
-  @include desktop {
-    display: none;
-  }
-}
-.primary-menu {
-  display: none;
-  @include desktop {
-    display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 .main-navigation {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  //   padding: 0;
   @include desktop {
     justify-content: flex-start;
     padding: 1rem;
+  }
+  .xsszu-logo {
+    height: auto;
+    width: 50%;
+    max-width: 250px;
+    display: flex;
+    order: 3;
+    margin: auto;
+    @include desktop {
+      width: 100%;
+      margin: 2rem 0;
+      order: 1;
+    }
+  }
+  .menu-toggle {
+    display: flex;
+    border: none;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    order: 1;
+    @include desktop {
+      display: none;
+    }
+  }
+  .menu-main-menu-container {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    order: 2;
+    .primary-menu {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 50%;
+      margin: 0 auto;
+      padding: 0;
+      .menu-item {
+        margin: 0 auto;
+      }
+
+      @include desktop {
+        display: block;
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+      }
+    }
+  }
+}
+
+.menu-hide {
+  display: none;
+  @include desktop {
+    display: block;
   }
 }
