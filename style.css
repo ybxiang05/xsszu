@@ -305,8 +305,8 @@ table {
       padding: 1rem; } }
   .main-navigation .xsszu-logo {
     height: auto;
-    width: 50%;
-    max-width: 250px;
+    width: 85%;
+    max-width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -316,8 +316,8 @@ table {
     margin: auto; }
     @media all and (min-width: 1000px) {
       .main-navigation .xsszu-logo {
-        width: 100%;
-        margin: 2rem 0;
+        width: 280px;
+        margin: 1rem 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; } }

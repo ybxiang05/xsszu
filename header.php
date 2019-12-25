@@ -25,7 +25,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="xsszu-logo" href="<?php echo esc_url(home_url('/'))?>">
-						<img class="logo-img" src="<?php echo get_template_directory_uri() . '/assets/szudrawsthings.jpg'?>" alt="xsszu site logo">
+						<img class="logo-img" src="<?php echo get_template_directory_uri() . '/assets/szudrawsthings - logo3.png'?>" alt="xsszu site logo">
 					</a>
 					<button id="toggle-btn"class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'primary-menu' ) ); ?>

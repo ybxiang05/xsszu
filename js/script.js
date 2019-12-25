@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const mainMenu = document.getElementsByClassName(
     'menu-main-menu-container'
   )[0];
+  mainMenu.classList.add('menu-hide');
   //const menuToggle = mainMenu.addClass('menu-hide');
   console.log(mainMenu);
   //   function mobileMenu(btnToggle) {
