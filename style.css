@@ -550,6 +550,9 @@ object {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
+.site .site-content {
+  margin: 2rem; }
+
 .site-footer {
   display: none; }
 
@@ -577,3 +580,10 @@ object {
       display: -ms-flexbox;
       display: flex;
       margin: auto; } }
+
+.home .su-image-carousel {
+  width: 90%;
+  margin: 3rem auto; }
+
+.home .entry-content h2 {
+  font-size: 2rem; }

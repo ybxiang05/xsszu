@@ -294,8 +294,8 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
-	wp_enqueue_style('font-style', 'https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap&subset=latin-ext');
-	wp_enqueue_style('font-style', 'https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+	wp_enqueue_style('raleway', 'https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap&subset=latin-ext');
+	wp_enqueue_style('merriweather', 'https://fonts.googleapis.com/css?family=Merriweather:400,500&display=swap');
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri());
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/script.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
