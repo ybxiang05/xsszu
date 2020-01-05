@@ -320,6 +320,11 @@ table {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; } }
+  .main-navigation li a {
+    text-decoration: none;
+    color: grey; }
+    .main-navigation li a:hover {
+      color: black; }
   .main-navigation .menu-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,6 +378,9 @@ table {
   @media all and (min-width: 1000px) {
     .menu-hide {
       display: block; } }
+
+.current-menu-item {
+  border-bottom: 1px solid grey; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -573,7 +581,6 @@ object {
               box-shadow: 2px 2px 2px grey;
       height: 300px;
       width: auto;
-      max-width: 300px;
       -o-object-fit: contain;
          object-fit: contain;
       display: -webkit-box;

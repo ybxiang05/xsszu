@@ -14,10 +14,13 @@
                         <div class="illustration-img">
                             <?php
                             if (has_post_thumbnail()) : ?>
-                                <a href="<?php the_permalink();?>">
                                     <?php the_post_thumbnail('full');?>
-                                </a>
                             <?php endif;?>
+                        </div>
+                        <div class="illustration-content">
+                            <?php
+                            //the_title('<h2 class="illustration-title">','</h2>');
+                            //the_content('<p class="illustration-desc">','</p>')?>
                         </div>
                     </article>  
                 <?php endwhile;?>

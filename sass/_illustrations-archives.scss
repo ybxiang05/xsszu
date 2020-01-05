@@ -15,10 +15,13 @@
         box-shadow: 2px 2px 2px grey;
         height: 300px;
         width: auto;
-        max-width: 300px;
+        //max-width: 300px;
         object-fit: contain;
         display: flex;
         margin: auto;
+        // @include desktop {
+        //   max-width: unset;
+        // }
       }
     }
   }

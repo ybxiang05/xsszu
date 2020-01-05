@@ -24,6 +24,13 @@
       order: 1;
     }
   }
+  li a {
+    text-decoration: none;
+    color: grey;
+    &:hover {
+      color: black;
+    }
+  }
   .menu-toggle {
     display: flex;
     border: none;
@@ -68,4 +75,8 @@
   @include desktop {
     display: block;
   }
+}
+
+.current-menu-item {
+  border-bottom: 1px solid grey;
 }
